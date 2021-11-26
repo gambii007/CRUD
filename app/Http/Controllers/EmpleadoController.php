@@ -37,6 +37,8 @@ class EmpleadoController extends Controller
     public function store(Request $request)
     {
         //
+        $datosEmpleados = request()->all();
+         return response()->json($datosEmpleados);
     }
 
     /**
