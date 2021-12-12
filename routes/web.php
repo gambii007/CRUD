@@ -23,7 +23,7 @@ Route::get('/Empleados', function () {
     return view('Empleados.index');
 });
 
-Route::get('Empleados/create', [EmpleadoController::class, 'create']);  
+Route::get('Empleados/create', [EmpleadoController::class, 'create']);
 */
 
-Route::resource('Empleados', EmpleadoController::class);
+Route::resource('empleados', EmpleadoController::class);
