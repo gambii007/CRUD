@@ -16,7 +16,11 @@ Mostrar las listas de Empleados
         @foreach( $empleados as $empleados)
         <tr>
             <td>{{ $empleados->id }}</td>
-            <td>{{ $empleados->Foto }}</td>
+
+            <td>
+                <img src="{{ asset('storeage').'/'.$empleados->Foto }}" alt="">
+            </td>
+
             <td>{{ $empleados->Nombre }}</td>
             <td>{{ $empleados->ApellidoPaterno }}</td>
             <td>{{ $empleados->ApellidoMaterno }}</td>
